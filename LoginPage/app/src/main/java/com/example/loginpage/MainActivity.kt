@@ -17,15 +17,22 @@ class MainActivity : AppCompatActivity() {
         binding.registerButton.setOnClickListener {
             val firstName = binding.firstnameInput.text.toString()
             val lastName = binding.lastnameInput.text.toString()
-            val age = binding.birthdateInput.text.toString()
+            val dateOfBirth = binding.birthdateInput.text.toString()
             val login = binding.loginInput.text.toString()
+            val password = binding.passwordInput.text.toString()
+
+            val person = Person(
+                firstname = firstName,
+                lastname = lastName,
+                dateOfBirth = dateOfBirth,
+                login = login,
+                password = password
+            )
 
             val intent = Intent(this@MainActivity, SecondActivity::class.java)
-            intent.putExtra("FIRST_NAME", firstName)
-            intent.putExtra("LAST_NAME", lastName)
-            intent.putExtra("AGE", age)
-            intent.putExtra("LOGIN", login)
+            intent.putExtra("Person", person)
             startActivity(intent)
         }
     }
 }
+

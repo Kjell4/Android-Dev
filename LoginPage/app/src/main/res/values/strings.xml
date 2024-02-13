@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Login Page</string>
+    <string name="firstname">Firstname: %1$s</string>
+    <string name="lastname">Lastname: %1$s</string>
+    <string name="login">Login: %1$s</string>
+    <string name="dateOfBirth">Date of birth: %1$s</string>
 </resources>
