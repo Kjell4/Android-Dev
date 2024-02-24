@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:backgroundTint="@color/cream"
+            android:padding="16dp">
+        </ImageButton>
+
+        <ImageView
+            android:id="@+id/pizza_image_second"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_centerInParent="true"
+            tools:src="@drawable/img">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pizza_title_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Вау! Кебаб"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingHorizontal="20dp"
+        android:layout_marginBottom="4dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/pizza_description_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Мясо говядины, соус ранч, сыр моцарелла, сладкий перец, томаты, красный лук и фирменный томатный соус"
+        android:paddingHorizontal="20dp"
+        android:textSize="16sp">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:paddingBottom="24dp">
+
+    <LinearLayout
+        android:id="@+id/size_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ToggleButton
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textOn="Маленькая"
+            android:textOff="Маленькая">
+        </ToggleButton>
+
+        <ToggleButton
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textOn="Средняя"
+            android:textOff="Средняя">
+        </ToggleButton>
+
+        <ToggleButton
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textOn="Большая"
+            android:textOff="Большая">
+        </ToggleButton>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/size_button"
+            android:gravity="center">
+
+            <ToggleButton
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:textOn="Традиционное"
+                android:textOff="Традиционное">
+            </ToggleButton>
+
+            <ToggleButton
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:textOn="Тонкое"
+                android:textOff="Тонкое">
+            </ToggleButton>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pizza_cost_cart"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            tools:text="В корзину за 2 900 т"
+            android:backgroundTint="@color/orange_light"
+            android:textSize="18sp"
+            android:paddingVertical="12dp">
+        </Button>
+
+    </RelativeLayout>
+
+</LinearLayout>

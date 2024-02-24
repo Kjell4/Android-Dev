@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Labka1</string>
+    <string name="cost_str">от %s</string>
+    <string name="cart_str">В корзину за %s</string>
 </resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/pizza_image"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="4dp"
+        tools:srcCompat="@drawable/img"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pizza_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Вау Кебаб!" />
+
+        <TextView
+            android:id="@+id/pizza_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="14sp"
+            tools:text="Мясо говядины, соус ранч, сыр моцарелла, сладкий перец, томаты, красный лук и фирменный томатный соус" />
+
+        <TextView
+            android:id="@+id/pizza_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/border_cost"
+            android:textColor="@color/orange_dark"
+            android:backgroundTint="@color/cream"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="6dp"
+            android:textSize="16sp"
+            tools:text="от 2 400 ₸" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
